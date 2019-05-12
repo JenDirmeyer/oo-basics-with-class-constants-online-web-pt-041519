@@ -13,7 +13,6 @@ class Shoe
     @brand = brand
     BRANDS << brand
     binding.pry
-    end
   end  
 
   def cobble
