@@ -1,5 +1,5 @@
 class Shoe
-  attr_accessor :color, :size, :material,:condition
+  attr_accessor :color, :size, :material, :condition
   attr_reader :brand
   
   BRANDS = []
@@ -10,8 +10,9 @@ class Shoe
   
   def brand= (brand)
     @brand = brand
+    if BRANDS.include?(brand) == false
     BRANDS << brand
-    BRANDS = BRANDS.uniq
+    end
   end  
 
   def cobble
