@@ -11,8 +11,8 @@ class Shoe
   
   def brand= (brand)
     @brand = brand
-    if BRANDS.include?(brand) == false
     BRANDS << brand
+    binding.pry
     end
   end  
 
